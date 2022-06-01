@@ -1,0 +1,71 @@
+<section class="container">
+    <h2>Ação</h2>
+    <div class="list-books">
+      <div *ngFor="let book of books" class="m-2">
+       <app-product-item [book]="book" ></app-product-item>
+      </div>
+    </div>
+</section>
+
+<section class="container">
+  <hr>
+  <h2>Aventura</h2>
+  <div class="list-books">
+    <div *ngFor="let book of books" class="m-2">
+     <app-product-item [book]="book" ></app-product-item>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <hr>
+  <h2>Teste</h2>
+  <div style="background-image: url(https://edit.org/photos/img/blog/zz7-flyer-personalizavel-para-capas-de-livros.jpg-840.jpg); width: 200px; height: 270px; background: no-repeat center;">
+  teste</div>
+</section>
+
+<section class="container">
+  <hr>
+  <h2>Teste</h2>
+</section>
+    
+    
+
+
+  
+
+
+  <!--<div class="row">
+    <div class="col" *ngFor="let book of books" style="max-width: 500px; border: 1px solid red">
+      <app-product-item [book]="book" class="m-3"></app-product-item>
+    </div>
+  </div>--> 
+        <!--<div class="card m-3" style="max-width: 510px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img [src]="book.img" class="img-fluid rounded-start" [alt]="book.name">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                    <h4 class="card-title">{{ book.name }}</h4>
+                    <h5 class="card-title text-muted">{{ book.price | currency:'BRL'}}</h5>
+                    <p class="card-text">
+                        <small class="text-muted">Categoria: {{ book.category }}</small>
+                        <br>
+                        <small class="text-muted">Quantidade: {{ book.quantity }}</small>
+                        
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-warning m-1"> Adicionar ao Carrinho</button>
+                    <button class="btn btn-outline-success m-1">Comprar</button>
+                  </div>
+              </div>
+            </div>
+          </div>-->
+          <!--<div class="card-group d-flex align-items-center justify-content-center flex-wrap">-->
+
+
+
+
+

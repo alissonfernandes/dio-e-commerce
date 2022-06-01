@@ -1,0 +1,16 @@
+<div class="card" style="max-width: 200px; min-width: 200px;">
+
+    <img [src]="book.img" [alt]="book.name" class="bd-placeholder-img card-img-top" style="max-width: 200px; max-height: 280px;">
+
+    <div class="card-body">
+        <h3 class="card-title" style="font-size: 12pt;">{{ book.name }}</h3>
+        <p class="card-text">{{ book.category }}</p>
+        <p class="card-text"><small class="text-muted">Estoque: {{ book.quantity }}</small></p>
+        <p class="card-text">{{ book.price | currency:'BRL' }}</p>
+    </div>
+
+    <div class="btn-group">
+        <button class="btn btn-sm btn-primary">Comprar</button>
+        <button class="btn btn-sm btn-outline-primary">Detalhes</button>
+    </div>
+</div>
