@@ -11,6 +11,18 @@ import { FiltersComponent } from './components/bookstore-app/filters/filters.com
 import { ProductListComponent } from './pages/product-list/product-list.component';
 import { ProductItemComponent } from './pages/product-list/product-item/product-item.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartListComponent } from './pages/cart/cart-list/cart-list.component';
+import { CartItemComponent } from './pages/cart/cart-item/cart-item.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+
 
 @NgModule({
   declarations: [
@@ -21,12 +33,23 @@ import { HttpClientModule } from '@angular/common/http';
     BookstoreAppComponent,
     FiltersComponent,
     ProductListComponent,
-    ProductItemComponent
+    ProductItemComponent,
+    CartListComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatListModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

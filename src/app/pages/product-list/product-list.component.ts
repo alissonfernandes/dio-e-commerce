@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/models/book';
 import { BookService } from 'src/app/services/book.service';
+import { CartService } from 'src/app/services/cart.service';
 
 
 @Component({
@@ -12,7 +13,7 @@ export class ProductListComponent implements OnInit {
 
   books: Array<Book> = [];
 
-  constructor(private bookservice: BookService) { }
+  constructor(private bookservice: BookService, private cartService: CartService) { }
 
   ngOnInit(): void {
     this.generateBooks();
@@ -22,6 +23,14 @@ export class ProductListComponent implements OnInit {
     this.bookservice.getBooks().subscribe(resp => {
         this.books = resp;
       }, (err) => console.log('Erro ao buscar lista de books'));
+  }
+
+  addToCart(book: Book){
+    this.cartService.addToCard(book);
+  }
+
+  removeFromCart(book: Book) {
+    this.cartService.removeFromCart(book);
   }
 
   private generateBooks(){

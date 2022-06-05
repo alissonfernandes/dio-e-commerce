@@ -1,0 +1,13 @@
+<mat-list-item>
+
+    <p [ngStyle]="{textDecoration: selectedToBuy ? 'line-through' : 'none'}">
+        {{ book.name }}
+    </p>
+
+    <button mat-icon-button aria-label="seleciona para comprar" (click)="markAsSelectToBuy()">
+        <mat-icon>done</mat-icon>
+    </button>
+
+    <button mat-button color="warn" (click)="removeItem()">Remover</button>
+
+</mat-list-item>
