@@ -5,7 +5,7 @@ import { CartListComponent } from './pages/cart/cart-list/cart-list.component';
 import { ProductListComponent } from './pages/product-list/product-list.component';
 
 const routes: Routes = [
-  { path: '', component: BookstoreAppComponent },
+  { path: '', component: ProductListComponent },
   { path: 'books', component: ProductListComponent },
   { path: 'cart', component: CartListComponent }
 ];

@@ -34,6 +34,10 @@ export class CartService {
     return this.cartBooks;
   }
 
+  public getNumberItemsIntoCart(): number {
+    return this.cartBooks.length;
+  }
+
   // PUT item to card
   public addToCard(book: Book){
     this.cartBooks.push(book);
